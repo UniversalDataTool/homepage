@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
 export const Mission = () => {
   const c = useStyles()
   return (
-    <div className={c.root}>
+    <div id="mission" className={c.root}>
       <div className={c.header}>Our Mission</div>
       <div className={c.text}>
         <b>

@@ -50,7 +50,8 @@ const useStyles = makeStyles(theme => ({
   icon: {
     width: 48,
     height: 48,
-    color: grey[500],
+    opacity: 0.6,
+    // color: grey[500],
     [theme.breakpoints.down("xs")]: {
       width: 32,
       height: 32
@@ -76,10 +77,10 @@ const useStyles = makeStyles(theme => ({
   }
 }))
 
-const BigButton = ({ title, description }) => {
+const BigButton = ({ href, title, description }) => {
   const c = useStyles()
   return (
-    <Button className={c.button}>
+    <Button href={href} className={c.button}>
       <div className={c.buttonContent}>
         <div className={c.titleContainer}>
           <ArrowRight className={c.icon} />
@@ -97,14 +98,17 @@ export const Navigation = () => {
   return (
     <div className={c.root}>
       <BigButton
+        href="https://github.com/openhumanannotation"
         title="Open Source Tools"
         description={`We release open-source libraries and tooling to edit any type of dataset, from videos to image to text to audio.`}
       />
       <BigButton
+        href="https://github.com/openhumanannotation/open-human-annotation-task-format"
         title="Specification"
         description={`We standarize formats for representing data for easy processing by humans.`}
       />
       <BigButton
+        href="#mission"
         title="Our Mission"
         description="We believe standardizing human interfaces will enable impactful automations."
       />

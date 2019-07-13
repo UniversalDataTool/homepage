@@ -1,7 +1,7 @@
 {
   "name": "oha-home",
   "version": "0.1.0",
-  "private": true,
+  "homepage": "https://openhumanannotation.github.io/homepage",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -13,7 +13,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 5602 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "gh-pages": "yarn build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,6 +38,7 @@
     "@storybook/addon-actions": "^5.1.9",
     "@storybook/addon-links": "^5.1.9",
     "@storybook/addons": "^5.1.9",
-    "@storybook/react": "^5.1.9"
+    "@storybook/react": "^5.1.9",
+    "gh-pages": "^2.0.1"
   }
 }
