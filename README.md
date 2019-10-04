@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 The Open Human Annotation project is a project focused on creating an open-s
 ource standard for annotating data. Using JSON to store how data will be processed, the tool can be used in any application where data transcription is needed.To test and create your own JSON files in the OHA standard, use the [Univeral Data Tool]("https://universaldatatool.com/"). 
 
-Live homepage [here](https://github.com/OpenHumanAnnotation/homepage) 
+Live homepage [here](https://openhumanannotation.github.io/homepage/) 
 ## Available Scripts
 
 In the project directory, you can run:
